@@ -7,6 +7,7 @@ body{
     padding: 20px;
     font-size: 30px;
     width: 50px;
+    height: 50px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
@@ -30,3 +31,21 @@ body{
     background: #55ACEE;
     color: white;
   } 
+
+    /* Github */
+    .fa-github {
+        background: #55ACEE;
+        color: white;
+      } 
+
+    /* LinkedIn */
+    .fa-linkedin {
+        background: #55ACEE;
+        color: white;
+    } 
+
+    /* Google */
+    .fa-google {
+        background: #55ACEE;
+        color: white;
+    } 
