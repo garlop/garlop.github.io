@@ -64,5 +64,11 @@ footer{
 
 i.fa {
     font-size: 12px;
+    padding: 0px;
+    width: auto;
+    height: auto;
 }
 
+i.fa:hover{
+  opacity: 1;
+}
