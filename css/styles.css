@@ -2,6 +2,10 @@ body{
     margin-top: 70px;   
 }
 
+footer{
+    padding-top: 30px;
+}
+
  /* Style all font awesome icons */
  .fa {
     padding: 10px;
