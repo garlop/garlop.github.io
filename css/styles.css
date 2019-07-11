@@ -4,7 +4,7 @@ body{
 
  /* Style all font awesome icons */
  .fa {
-    padding: 20px;
+    padding: 10px;
     font-size: 30px;
     width: 50px;
     height: 50px;
@@ -34,18 +34,18 @@ body{
 
     /* Github */
     .fa-github {
-        background: #55ACEE;
+        background: #444444;
         color: white;
       } 
 
     /* LinkedIn */
     .fa-linkedin {
-        background: #55ACEE;
+        background: #007bb6;
         color: white;
     } 
 
     /* Google */
     .fa-google {
-        background: #55ACEE;
+        background: #dd4b39;
         color: white;
     } 
