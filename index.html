@@ -228,18 +228,18 @@
             </div>
             <div class="row">
                 <div class="col-6 text-center">
-                    <img src="img/spanish.png" class="img-fluid" width="60%">
+                    <a href="#" onClick="changeResume(true)"><img src="img/spanish.png" class="img-fluid" width="60%"></a>
                 </div>
                 <div class="col-6 text-center">
-                    <img src="img/english.png" class="img-fluid" width="60%">
+                    <a href="#" onClick="changeResume(false)"><img src="img/english.png" class="img-fluid" width="60%"></a>
                 </div>
             </div>
             <br>
             <div class="row">
                 <div class="col-12 offset-md-2 col-md-8 text-center">
-                    <object data="files/test.pdf" type="application/pdf" width="100%" height="800">
+                    <object id="resumeShow" data="files/cvEng.pdf" type="application/pdf" width="100%" height="800">
                         <p>It appears you don't have a PDF plugin for this browser.
-                            Don't Worry... you can <a href="files/test.pdf">click here to
+                            Don't Worry... you can <a href="files/test.pdf" id="resumeAlt">click here to
                                 download the PDF file.</a></p>
                     </object>
                 </div>
@@ -284,6 +284,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <scrip src="js/main.js"></scrip>
 </body>
 
 </html>
