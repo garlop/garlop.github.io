@@ -49,3 +49,9 @@ body{
         background: #dd4b39;
         color: white;
     } 
+
+    /* Mastodon */
+    .fa-mastodon {
+        background: #2c90db;
+        color: white;
+    } 
