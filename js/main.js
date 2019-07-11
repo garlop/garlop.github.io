@@ -1,9 +1,15 @@
 function changeResume(parameter){
     if(parameter){
-        $("#resumeShow").data = "files/cvEsp.pdf"
-        $("#resumeAlt").href= "files/cvEsp.pdf"
+        var new_url = "files/cvEsp.pdf";
+            $('#resumeShow').attr('data', new_url);
+            $('#resumeAlt').attr('href', new_url);
+            $('#resumeShow').load(new_url);
+            $('#resumeAlt').load(new_url);
     }else{
-        $("#resumeShow").data = "files/cvEng.pdf"
-        $("#resumeAlt").href= "files/cvEng.pdf"
+        var new_url = "files/cvEng.pdf";
+            $('#resumeShow').attr('data', new_url);
+            $('#resumeAlt').attr('href', new_url);
+            $('#resumeShow').load(new_url);
+            $('#resumeAlt').load(new_url);
     }
 }
