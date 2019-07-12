@@ -1,6 +1,7 @@
 $('#submitBtn').click(function() {
     /* when the button in the form, display the entered values in the modal */
-    $(".alert").alert('close');
+    $(".alert").hide().show('medium');
+
     $('#formContact').submit();
 });
 
