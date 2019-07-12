@@ -12,6 +12,21 @@
         integrity="sha256-gsmEoJAws/Kd3CjuOQzLie5Q3yshhvmo7YNtBG7aaEY=" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>Luis Garnica Software Developer</title>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+           (function(){
+              emailjs.init("user_QShf3GGLqZsZypHSUi4C1");
+           })();
+    </script>
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+                this.contact_number.value = Math.random() * 100000 | 0;
+                emailjs.sendForm('contact_service', 'contact_template', this);
+            });
+        }
+    </script>
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -393,23 +408,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-    <script type="text/javascript">
-           (function(){
-              emailjs.init("user_QShf3GGLqZsZypHSUi4C1");
-           })();
-    </script>
     <script src="js/main.js"></script>
-    <script type="text/javascript">
-        window.onload = function() {
-            document.getElementById('contact-form').addEventListener('submit', function(event) {
-                event.preventDefault();
-                this.contact_number.value = Math.random() * 100000 | 0;
-                emailjs.sendForm('contact_service', 'contact_template', this);
-            });
-        }
-    </script>
-
 </body>
 <footer class="bg-dark">
     <div class="row">
