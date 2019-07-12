@@ -63,7 +63,7 @@ footer{
     } 
 
 i.fa {
-    font-size: 12px;
+    font-size: 15px;
     padding: 0px;
     width: auto;
     height: auto;
@@ -71,4 +71,8 @@ i.fa {
 
 i.fa:hover{
   opacity: 1;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 10px;
 }
