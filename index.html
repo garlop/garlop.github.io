@@ -80,6 +80,7 @@
                 <span class="badge badge-pill badge-info">Oracle Database</span>
                 <span class="badge badge-pill badge-info">SQL Server</span>
                 <span class="badge badge-pill badge-warning">Team Work</span>
+                <span class="badge badge-pill badge-warning">Problem Resolution</span>
             </div>
         </div>
         <br>
@@ -329,14 +330,15 @@
                     </div>
                 </div>
                 <div class="col-12 col-sm-8">
-                    <form>
+                    <form id="contact-form">
+                        <input type="hidden" name="contact_number">
                         <div class="form-group">
                             <div class="row">
                                 <div class="col-12 col-md-2 offset-md-1 text-left">
                                     <label for="inputName">Name</label>
                                 </div>
                                 <div class="col-12 col-md-8">
-                                    <input type="text" class="form-control" id="inputName" placeholder="Enter name">
+                                    <input type="text" class="form-control" id="inputName" placeholder="Enter name" name="user_name">
                                 </div>
                             </div>
                         </div>
@@ -346,7 +348,7 @@
                                     <label for="inputEmail">Email address</label>
                                 </div>
                                 <div class="col-12 col-md-8">
-                                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter email">
+                                    <input type="email" class="form-control" id="inputEmail" placeholder="Enter email" name="user_email">
                                 </div>
                             </div>
                         </div>
@@ -368,13 +370,13 @@
                                 </div>
                                 <div class="col-12 col-md-8">
                                     <textarea class="form-control" id="inputComment" rows="5"
-                                        placeholder="Enter your Comment"></textarea>
+                                        placeholder="Enter your Comment" name="contact"></textarea>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-12 offset-md-9 col-md-2">
-                                <button type="submit" class="btn btn-block btn-primary">Submit</button>
+                                <button type="submit" class="btn btn-block btn-primary" value="Send">Submit</button>
                             </div>
                         </div>
                     </form>
@@ -391,7 +393,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+    <script type="text/javascript">
+           (function(){
+              emailjs.init("user_QShf3GGLqZsZypHSUi4C1");
+           })();
+    </script>
     <script src="js/main.js"></script>
+
 </body>
 <footer class="bg-dark">
     <div class="row">

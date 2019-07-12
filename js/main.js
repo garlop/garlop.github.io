@@ -1,3 +1,11 @@
+window.onload = function() {
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        this.contact_number.value = Math.random() * 100000 | 0;
+        emailjs.sendForm('contact_service', 'contact_template', this);
+    });
+}
+
 function changeResume(parameter){
     if(parameter){
         var new_url = "files/cvEsp.pdf";
