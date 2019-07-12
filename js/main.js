@@ -1,3 +1,9 @@
+$('#submitBtn').click(function() {
+    /* when the button in the form, display the entered values in the modal */
+    alert('submitting');
+    $('#formContact').submit();
+});
+
 function changeResume(parameter){
     if(parameter){
         var new_url = "files/cvEsp.pdf";
